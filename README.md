@@ -226,9 +226,7 @@ python test.py --exp_dir experiments \
 
 Metrics: Accuracy, Macro-F1, Macro Recall/Precision, Quadratic Weighted Kappa (QWK), Adjacent-stage F1, MAE over stage ranks, and Hard-F1. Stage-wise precision / recall / F1 / support are written per class.
 
-> 7. Results
->
-
+## 7. Results
 
 
 PECAL reaches Macro-F1 **0.685** on O3543-2022–2023 and **0.641** on O8562-2021–2022 (equal-weight mean **0.6630**, +6.85 pp over Baseline); mean MAE falls from **0.5045** to **0.3870** (−23.3% relative). Gains are not uniform across stages: three-leaf and heading vary by season, and maturity declines in both seasons (−3.75 pp on average).
