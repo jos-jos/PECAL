@@ -52,7 +52,6 @@ PECAL_code_package/
 │   │                                   #   energy/area variants, n_global_*, sensitivity ablations
 │   └── experiments/                    # 8 single-factor configs for the Table 5 component ablation
 │
-├── checkpoint/                 # released model weights (25 experiment directories)
 ├── data/                       # format samples only — NOT the full dataset (see §4)
 │   ├── trainval                # contained train.csv and val.csv
 │   └── test
