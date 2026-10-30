@@ -92,6 +92,8 @@ ls ~/.cache/torch/hub/checkpoints/resnet18-f37072fd.pth
 
 ## 4. Data
 
+The training and validation partitions are provided as CSV files containing image identifiers and growth-stage labels. The maize test subsets are defined by the following held-out site–year combinations: O3543-2022, O8562-2022, O8563-2022, O6965-2021, and O9113-2018. The winter wheat test subsets correspond to O3543-2022–2023 and O8562-2021–2022 growing seasons. Test images were excluded from model training, validation, and checkpoint selection. The complete image dataset is available from the corresponding author upon reasonable request.
+
 ### 4.1 Maize (main experiment)
 
 Seven ordered stages coded as `21, 31, 41, 61, 71, 81, 91` (emergence, three-leaf, seven-leaf, jointing, tasseling, milk, maturity), mapped to consecutive rank indices in developmental order. The numeric gaps between codes do **not** represent temporal intervals.
