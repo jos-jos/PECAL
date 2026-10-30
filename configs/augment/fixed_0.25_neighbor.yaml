@@ -1,0 +1,8 @@
+augment:
+  name: "fixed_0.25_neighbor"
+  mix_strategy: "ricap"
+  ricap_mode: "neighbor"
+  dual_stream: true             # 仅对 ricap 生效（控制是否启用双流）
+  grid_type: random
+  prob: 0.5
+  weighting_mode: "fixed"  # 强行均分

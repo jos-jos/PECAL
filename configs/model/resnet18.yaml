@@ -1,0 +1,5 @@
+model:
+  name: resnet18
+  pretrained: true         
+  checkpoint_path: "torch/hub/checkpoints/resnet18-f37072fd.pth"  
+  num_classes: 9

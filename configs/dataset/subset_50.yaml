@@ -1,0 +1,3 @@
+dataset:
+  subset_ratio: 0.5   # 50% 数据
+  sampler: weighted   # 默认开启类别均衡采样

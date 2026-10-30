@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+
+# Training outputs
+experiments/
+wheat_experiments/
+runs/
+logs/
+*.pth
+*.pt
+*.onnx
+
+# Released weights (~3.3 GB) — distributed separately, see README §8
+checkpoint/
+
+# Raw images. `data/` is intentionally TRACKED: it contains only 106 sample
+# images that document the expected layout (see README §4.3). Large-scale
+# training/test images should be kept outside the repository.
+!data/
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Notebooks / scratch
+.ipynb_checkpoints/
+tmp_*/

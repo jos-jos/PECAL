@@ -1,0 +1,13 @@
+augment:
+  name: "ablation_kl_strong_to_mix"
+  mix_strategy: "ricap"
+  ricap_mode: "curriculum"
+  weighting_mode: energy
+  dual_stream: true
+  prob: 0.5
+  grid_type: random
+  n_global: 2
+  random_position: false
+  label_type: gaussian
+  switch_epoch: 100
+  kl_direction: strong_to_mix   # 消融：KL(strong || mix)

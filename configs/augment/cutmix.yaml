@@ -1,0 +1,11 @@
+augment:
+  name: basic
+
+  # 开启 CutMix (在 Trainer 中处理)
+  mix_strategy: cutmix
+
+  # CutMix alpha 参数 (通常设为 1.0)
+  cutmix_alpha: 1.0
+
+  # 触发概率
+  prob: 1.0

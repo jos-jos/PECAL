@@ -1,0 +1,13 @@
+# 消融实验B：4视图全部缩放
+# 对照组：energy_based_curriculum_consistency.yaml（原版 dual_stream）
+# 唯一变量：patch_mode = 'resize_all'
+# 实验目的：验证显著图引导裁剪 + 随机裁剪混合策略相对于纯缩放的贡献
+augment:
+  name: "ablation_resize_all"
+  mix_strategy: "ricap"
+  ricap_mode: "curriculum"
+  weighting_mode: energy
+  dual_stream: true
+  prob: 0.5
+  grid_type: random
+  patch_mode: "resize_all"  # ← 消融变量：4个patch全部缩放

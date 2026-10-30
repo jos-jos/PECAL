@@ -1,0 +1,4 @@
+model:
+  name: mobilenetv2
+  pretrained: false         
+  checkpoint_path: "torch/hub/checkpoints/mobilenet_v2-b0353104.pth"  # <--- 指向你下载好的文件

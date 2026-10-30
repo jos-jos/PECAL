@@ -1,0 +1,13 @@
+# 消融实验C：4区域全部显著图引导裁剪
+# 对照组：energy_based_curriculum_consistency.yaml（原版 dual_stream）
+# 唯一变量：patch_mode = 'saliency_crop_all'
+# 实验目的：验证双流设计（前2 resize + 后2 saliency）相对于全部使用显著图裁剪的差异
+augment:
+  name: "ablation_saliency_crop_all"
+  mix_strategy: "ricap"
+  ricap_mode: "curriculum"
+  weighting_mode: energy
+  dual_stream: true
+  prob: 0.5
+  grid_type: random
+  patch_mode: "saliency_crop_all"  # ← 消融变量：4个patch全部显著图引导裁剪

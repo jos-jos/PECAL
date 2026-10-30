@@ -1,0 +1,9 @@
+augment:
+  name: "n_global_4_resize_all"
+  mix_strategy: "ricap"
+  ricap_mode: "curriculum"
+  weighting_mode: energy
+  dual_stream: true
+  prob: 0.5
+  grid_type: random
+  n_global: 4  # 4全局resize + 0局部saliency裁剪

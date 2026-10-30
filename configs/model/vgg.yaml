@@ -1,0 +1,4 @@
+model:
+  name: vgg16_bn
+  pretrained: false          # <--- 设为 false，禁止 timm 自动下载
+  checkpoint_path: "torch/hub/checkpoints/vgg16_bn-6c64b313.pth"  # <--- 指向你下载好的文件

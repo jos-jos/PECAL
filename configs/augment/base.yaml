@@ -1,0 +1,3 @@
+augment:
+  name: basic          # 对应 augmentations.py 里的 basic 模式, 只做 Resize + RandomCrop + Flip
+  mix_strategy: none   # 不使用混合

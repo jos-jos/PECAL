@@ -1,0 +1,9 @@
+augment:
+  name: "n_global_1_resize1_saliency3"
+  mix_strategy: "ricap"
+  ricap_mode: "curriculum"
+  weighting_mode: energy
+  dual_stream: true
+  prob: 0.5
+  grid_type: random
+  n_global: 1  # 1全局resize + 3局部saliency裁剪

@@ -1,0 +1,8 @@
+augment:
+  name: "ricap"
+  mix_strategy: "ricap"
+  ricap_mode: "random"
+  prob: 0.5
+  weighting_mode: "area"  
+  grid_type: random
+  dual_stream: false

@@ -1,0 +1,4 @@
+dataset:
+  subset_ratio: 0.1   # 10% 数据
+  sampler: weighted   # 默认开启类别均衡采样
+  saliency_dir:

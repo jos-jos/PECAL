@@ -1,0 +1,10 @@
+augment:
+  name: "n_global_2_resize2_saliency2_random_pos"
+  mix_strategy: "ricap"
+  ricap_mode: "curriculum"
+  weighting_mode: energy
+  dual_stream: true
+  prob: 0.5
+  grid_type: random
+  n_global: 2            # 2全局resize + 2局部saliency裁剪
+  random_position: true  # 全局/局部位置随机洗牌（实验6）

@@ -1,0 +1,9 @@
+augment:
+  name: "energy_based_intra"
+  mix_strategy: "ricap"
+  ricap_mode: "intra"
+  weighting_mode: energy 
+  dual_stream: true
+  prob: 0.5
+  grid_type: random  # ExG 语义能量
+  label_smooth: 0.1

@@ -1,0 +1,5 @@
+dataset:
+  subset_ratio: 1.0   # 100% 数据
+  sampler: weighted   # 默认开启类别均衡采样
+  saliency_dir: "PECAL/datasets/saliency_maps_multi"
+  probmap_pkl_path: "PECAL/datasets/exg_probmaps_exact.pkl"

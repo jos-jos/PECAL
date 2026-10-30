@@ -1,0 +1,16 @@
+train:
+  resume: false
+  batch_size: 256
+  workers: 16
+  epochs: 200
+  lr: 1e-4
+  optimizer: adamw
+  seed: 42
+  exp_name: wheat_pecal
+  img_size: 224
+  warmup_epochs: 5
+  persistent_workers: False
+  # 路径配置（小麦）
+  train_csv: "PECAL/wheat/trainval/train.csv"
+  val_csv: "PECAL/wheat/trainval/val.csv"
+  exp_dir: ""

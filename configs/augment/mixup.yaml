@@ -1,0 +1,11 @@
+augment:
+  name: basic
+
+  # 开启 Mixup (在 Trainer 中处理)
+  mix_strategy: mixup
+
+  # Beta 分布参数，alpha=1.0 对应均匀分布，0.8 是常用值
+  mixup_alpha: 0.8
+
+  # 触发概率 (通常 Mixup 对每个 Batch 都做)
+  prob: 1.0  # 为什么不是0.5

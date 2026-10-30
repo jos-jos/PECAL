@@ -1,0 +1,4 @@
+model:
+  name: efficientnet_b0
+  pretrained: false        
+  checkpoint_path: "torch/hub/checkpoints/efficientnet_b0_rwightman-7f5810bc.pth"  

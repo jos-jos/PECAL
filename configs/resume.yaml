@@ -1,0 +1,16 @@
+train:
+  resume: false
+  batch_size: 256   # 4卡建议 128
+  workers: 16   # swin tiny 从8 -> 16
+  epochs: 200
+  lr: 1e-4  # swin tiny 从1e-3 -> 1e-4
+  optimizer: adamw
+  seed: 42
+  exp_name: ablation_saliency_crop_all
+  img_size: 224
+  warmup_epochs: 5
+  persistent_workers: False
+  # 路径配置
+  train_csv: "PECAL/corn-cls/train/train.csv"
+  val_csv: "PECAL/corn-cls/train/val.csv"
+  exp_dir: ""

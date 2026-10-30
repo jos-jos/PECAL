@@ -1,0 +1,8 @@
+augment:
+  name: "area_based_neighbor"
+  mix_strategy: ricap
+  ricap_mode: neighbor
+  dual_stream: true
+  prob: 0.5
+  weighting_mode: "area"  # 几何面积
+  grid_type: random   # random / uniform

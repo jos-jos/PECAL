@@ -1,0 +1,10 @@
+augment:
+  name: mosaic
+
+  # 开启 Mosaic (在 Dataset 中处理)
+  mix_strategy: mosaic
+  ricap_mode: random   # Mosaic 内部也使用随机采样，但不影响
+  weighting_mode: area
+  # 触发概率: 0.5 表示 50% 的图是拼图，50% 是单图
+  # 保持与 PECAL 一致，以便公平对比
+  prob: 0.5

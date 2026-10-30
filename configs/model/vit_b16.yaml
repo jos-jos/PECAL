@@ -1,0 +1,5 @@
+
+model:
+  name: vit_b16
+  pretrained: false          # <--- 设为 false，禁止 timm 自动下载
+  checkpoint_path: "torch/hub/checkpoints/vit_b_16-c867db91.pth"  # <--- 指向你下载好的文件

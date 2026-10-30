@@ -1,0 +1,7 @@
+augment:
+  name: randaugment 
+  mix_strategy: none
+
+  # RandAugment 参数
+  ra_num_ops: 2      # N: 每次选几个操作
+  ra_magnitude: 9    # M: 强度 (0-30)，农业数据建议 9 或 7，太大可能把病斑抹没了
