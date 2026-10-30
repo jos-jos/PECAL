@@ -57,8 +57,6 @@ PECAL_code_package/
 └── requirements.txt
 ```
 
-> **Why four `MixingDataset` classes instead of one?** They are not stylistic variants — they differ in semantics (one returns a 5-tuple with `patch_labels` used by the same-class mask; others accept different switches such as `n_global` vs. `patch_mode`). Merging them would silently change behaviour, so `dataset_factory.py` **dispatches** rather than unifies.
-
 ---
 
 ## 3. Setup
