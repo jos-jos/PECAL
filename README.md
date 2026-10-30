@@ -231,7 +231,20 @@ PECAL reaches Macro-F1 **0.685** on O3543-2022–2023 and **0.641** on O8562-202
 
 ## 8. Model weights
 
-`checkpoint/` contains 25 directories, one per experiment, each with `best.pth` (ResNet-18, ≈134 MB;).
+Download the complete model weights from [PECAL model checkpoints v1](https://github.com/jos-jos/PECAL/releases/tag/checkpoints-v1). Weights are distributed as Release attachments and are not included in the source checkout.
+
+The release contains all 25 experiment directories, 46 PyTorch weight files, and 4 training log/prediction files (approximately 6.18 GB uncompressed). Each experiment has a `best.pth` file (ResNet-18, approximately 134 MB); `label_uniform/` also includes intermediate checkpoints and training outputs.
+
+Download all four `checkpoint.zip.part-*` attachments and `SHA256SUMS.txt` into the same directory. On macOS/Linux:
+
+```bash
+# Verify on Linux (macOS: shasum -a 256 -c SHA256SUMS.txt):
+sha256sum -c SHA256SUMS.txt
+cat checkpoint.zip.part-aa checkpoint.zip.part-ab checkpoint.zip.part-ac checkpoint.zip.part-ad > checkpoint.zip
+unzip checkpoint.zip
+```
+
+For Windows merge instructions, see the Release notes. Place the extracted `checkpoint/` directory in the repository root; the default model path is `checkpoint/PECAL/best.pth`. Git LFS is not required to download the Release attachments.
 
 | Directory | Corresponds to |
 |---|---|
