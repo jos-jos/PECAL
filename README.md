@@ -54,10 +54,6 @@ PECAL_code_package/
 │
 ├── checkpoint/                 # released model weights (25 experiment directories)
 ├── data/                       # format samples only — NOT the full dataset (see §4)
-├── test_results/               # reference measurements shipped with the release (see §7)
-│   ├── ablation_full_5sites.csv
-│   └── five_site_comparison/five_site_exploratory_complete_corrected.csv
-└── wheat_results/test_results_wheat.csv   # corresponds to EARLIER weights, see §7.4
 └── requirements.txt
 ```
 
